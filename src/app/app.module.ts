@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DroomslistComponent } from './droomslist/droomslist.component';
+import { SiteContactComponent } from './site-contact/site-contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DroomslistComponent,
+    SiteContactComponent
   ],
   imports: [
     BrowserModule,
