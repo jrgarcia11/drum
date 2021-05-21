@@ -1,0 +1,36 @@
+html, body {
+	width: 40%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	background-color: black;
+	color: white;
+}
+
+
+
+table{
+	width:100%;
+}
+td{
+	text-align:center;
+	font-weight: bold;
+	padding: 10px;
+}
