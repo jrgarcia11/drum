@@ -1,4 +1,7 @@
+
 # Drum
+![DrumRoom](https://user-images.githubusercontent.com/19293060/119250426-4772f180-bb5d-11eb-8b28-8754c1b6c65a.png)
+Cloudware for Music Studio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
