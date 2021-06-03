@@ -1,16 +1,7 @@
-html, body {
-	width: 40%;
+.center{
+	margin: auto;
+	width: 50%;
 }
-html {
-    display: table;
-    margin: auto;
-}
-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-
 
 a:link{
 	text-decoration: none;
@@ -28,6 +19,7 @@ a:hover{
 
 table{
 	width:100%;
+	table-layout: fixed;
 }
 td{
 	text-align:center;

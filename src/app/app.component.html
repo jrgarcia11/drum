@@ -1,8 +1,11 @@
 <html>
-<img src='assets/DrumRoom.png' width="200">
-<h1 style="display:inline;"><a routerLink="/">Drum Room</a></h1> <!--DRÜM-->
+<div class="center" style="text-align:center;">
+	<img src='assets/DrumRoom.png' width="200">
+	<h1><a routerLink="/">Drum Room</a></h1> <!--DRÜM-->
+</div>
 
-<table style="padding-top:20px;">
+<hr/>
+<table>
 <tr>
 	<td><a routerLink="/rooms" style="a:hover">Rooms</a></td>
 	<td><a routerLink="/schedule">Schedule</a></td>
@@ -12,5 +15,8 @@
 </table>
 <hr/>
 
+<div class="center" style="text-align:left;width:66%;">
 <router-outlet></router-outlet>
+</div>
+
 </html>

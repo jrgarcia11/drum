@@ -8,6 +8,7 @@ import { SiteContactComponent } from './site-contact/site-contact.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
