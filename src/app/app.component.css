@@ -2,20 +2,29 @@
 	margin: auto;
 	width: 50%;
 }
-
-a:link{
+.umlaut{
+	float: right;
+	font-size: 200%;
+	font-family: roboto;
+	border-radius: 20px;
+	background: black;
+	color: gold;
+	padding-right:9px;
+	padding-left:9px;
 	text-decoration: none;
 }
-a:visited{
+
+.menu-link:link{
+	text-decoration: none;
+}
+.menu-link:visited{
 	text-decoration: none;
 	color: black;
 }
-a:hover{
+.menu-link:hover{
 	background-color: black;
 	color: white;
 }
-
-
 
 table{
 	width:100%;

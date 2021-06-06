@@ -5,13 +5,15 @@ import { SiteContactComponent } from './site-contact/site-contact.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'rooms', component: DroomslistComponent },
 	{ path: 'schedule', component: CalendarComponent },
 	{ path: 'site-contact', component: SiteContactComponent },
-	{ path: 'faq', component: FaqComponent }
+	{ path: 'faq', component: FaqComponent },
+	{ path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({
