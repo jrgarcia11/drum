@@ -6,25 +6,22 @@ import { environment } from './../environments/environment';
   providedIn: 'root'
 })
 export class SupabaseService {
-
-  constructor() {
-  }
-
-  ngOnInit(){
-	const supabaseUrl = environment.SUPABASE_URL;
-	const supabaseKey = environment.SUPABASE_KEY;
-	const supabase = createClient(supabaseUrl, supabaseKey);
-  }
-
-  getName() {
-	return 'Jade';
-  }
-
-  //asterisk needed for functions with 'await' keyword to signify generator
-  /**async getuser() {
-		let { user, error } = await supabase.auth.signIn({
-  		email: 'jrenegarcia11@email.com'
-	})
-	//console.log('user: '+user);
-  }*/
+	supabase:any;
+	constructor() {
+		const supabaseUrl = environment.SUPABASE_URL;
+		const supabaseKey = environment.SUPABASE_KEY;
+		this.supabase = createClient(supabaseUrl, supabaseKey);
+	}
+	async signup(_email:string, _pass:string): Promise<void>{
+		let { user, error } = await this.supabase.auth.signUp({
+			email: _email,
+			password: _pass
+		})
+	}
+	async login(_email:string, _pass:string): Promise<void>{
+		let {user, error} = await this.supabase.auth.signIn({
+			email: _email,
+			pass: _pass
+		})
+	}
 }

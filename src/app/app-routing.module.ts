@@ -6,6 +6,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
 	{ path: 'schedule', component: CalendarComponent },
 	{ path: 'site-contact', component: SiteContactComponent },
 	{ path: 'faq', component: FaqComponent },
-	{ path: 'profile', component: ProfileComponent }
+	{ path: 'profile', component: ProfileComponent },
+	{ path: 'login', component: LoginComponent}
 ];
 
 @NgModule({

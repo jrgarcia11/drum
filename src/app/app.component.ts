@@ -9,6 +9,5 @@ import { SupabaseService} from './supabase.service';
 })
 export class AppComponent {
 	constructor(private supabaseService:SupabaseService){}
-	name = this.supabaseService.getName();
 	title = 'drum';
 }

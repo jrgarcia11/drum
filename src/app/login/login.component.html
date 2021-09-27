@@ -1,0 +1,10 @@
+<form *ngIf="!sent" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+	<h2>{{loginTitle}}</h2>
+	<label for="mail">Email</label><br/>
+	<input name="email" ngModel required #email="ngModel"><br/>
+	<label for="pass">Password</label><br/>
+	<input name="pass" ngModel required #pass="ngModel" type="password"><br/>
+	<button>{{loginTitle}}</button> or <span class='buttonlink' (click)="flip()">{{option}}</span>
+</form>
+
+<h2 *ngIf="sent">Verification email sent.</h2>
